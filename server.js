@@ -8,7 +8,7 @@ connectDB();
 app.use(express.json());
 app.get("/", (req, res) => {
   res.setHeader("Access-Control-Allow-Credentials","true");
-  res.send("API IS RUNNING"));}
+  res.send("API IS RUNNING");}
 
 app.use("/api/users", require("./routes/api/users"));
 
